@@ -25,7 +25,7 @@ function staticLoadPlaces() {
             icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
             icon.setAttribute('gltf-model', "#animated-asset");
             // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
-            icon.setAttribute('scale', '0.21 0.21 0.21');
+            icon.setAttribute('scale', '0.075 0.075 0.075');
             icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
             const clickListener = function (ev) {
                ev.stopPropagation();
