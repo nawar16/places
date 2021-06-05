@@ -60,6 +60,8 @@ function staticLoadPlaces() {
                 ev.preventDefault();
                 console.log('Clicked');
                 const name = ev.target.getAttribute('name');
+                console.log(name);
+                window.location.href = "https://google.com";
                 const el = ev.detail.intersection && ev.detail.intersection.object.el;
                 if (el && el === ev.target) {
                     const label = document.createElement('span');
