@@ -59,7 +59,7 @@ function staticLoadPlaces() {
                ev.stopPropagation();
                 ev.preventDefault();
                 console.log('Clicked');
-                const name = ev.target.getAttribute('name');
+                const name = ev.target.getAttribute('place.name');
                 console.log(name);
                 window.location.href = "https://google.com";
                 const el = ev.detail.intersection && ev.detail.intersection.object.el;
