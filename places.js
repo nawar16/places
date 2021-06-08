@@ -59,9 +59,9 @@ function staticLoadPlaces() {
                ev.stopPropagation();
                 ev.preventDefault();
                 console.log('Clicked');
-                const name = ev.target.getAttribute('place.name');
-                console.log(name);
-                window.location.href = "https://google.com";
+                const name = ev.target.getAttribute('name');
+                console.log(place.name);
+                window.location.href = "https://google.com" + '/search?q=' + place.name;
                 const el = ev.detail.intersection && ev.detail.intersection.object.el;
                 if (el && el === ev.target) {
                     const label = document.createElement('span');
